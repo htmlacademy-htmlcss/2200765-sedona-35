@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Васин](https://up.htmlacademy.ru/htmlcss/35/user/2200765).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
