@@ -8,7 +8,7 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="" alt="Логотип Седона"></a>
+          <li><a class="navigation-logo" href="index.html"><img class="page-header-logo" src="" alt="Логотип Седона"></a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">О седоне</a></li>
           <li class="navigation-item"><a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
@@ -38,18 +38,17 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
-            <li class="catalog-filter-item"></li>
+            <li class="catalog-filter-item">
             <label class="control">
             <input class="control-input" type="checkbox" name="swimmingpool" checked>Бассейн
             </label>
             </li>
-            <li class="catalog-filter-item"></li>
+            <li class="catalog-filter-item">
             <label class="control">
             <input class="control-input" type="checkbox" name="parking" checked>Парковка
             </label>
             </li>
-            <li class="catalog-filter-item"></li>
-            <label class="control">
+            <li class="catalog-filter-item">            <label class="control">
             <input class="control-input" type="checkbox" name="wifi">Wi-Fi
             </label>
             </li>
@@ -57,17 +56,17 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
-            <li class="catalog-filter-item"></li>
+            <li class="catalog-filter-item">
             <label class="control">
             <input class="control-input" type="radio" name="housing" value="hotel" checked>Гостиница
             </label>
             </li>
-            <li class="catalog-filter-item"></li>
+            <li class="catalog-filter-item">
             <label class="control">
             <input class="control-input" type="radio" name="housing" value="motel" >Мотель
             </label>
             </li>
-            <li class="catalog-filter-item"></li>
+            <li class="catalog-filter-item">
             <label class="control">
             <input class="control-input" type="radio" name="housing" value="apartments">Апартаменты
             </label>
@@ -160,8 +159,8 @@
         <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
-          <label form="newletter-form-inner">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email" required>
+          <label for="newletter-email-inner">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email-inner" required>
           <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
