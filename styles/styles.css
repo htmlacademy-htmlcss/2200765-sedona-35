@@ -16,17 +16,31 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   color: #000000;
   background-color: #7a8b85ea;
 }
 
-.page-header {
-  color: #000000;
-
+/*Кнопка*/
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
+/*Большая кнопка*/
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Навигационные кнопки */
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -36,18 +50,19 @@ body {
   text-transform: capitalize;
 }
 
+/* Стартовый блок */
 .main-index {
   color: #000000;
-
-  background-image: url(/images/main/mountains.jpg);
+  background-image: url();
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+/*Подпись под стартовым блоком*/
 .page-start-text {
   text-align: center;
 }
-/*Седона — небольшой городок в Аризоне, заслуживающий большего!*/
+
 .start-title {
   font-weight: 700;
   font-size: 30px;
@@ -60,6 +75,7 @@ body {
   line-height: 26px;
   color: #333333;
 }
+
 /* Преимущества */
 .advantages-title {
   font-weight: 700;
@@ -68,7 +84,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-
 }
 
 .advantages-description {
@@ -81,6 +96,7 @@ body {
 .advantages-color-white {
   color: #ffffff;
 }
+
 /* Доступный сервис */
 .services-title {
   font-weight: 700;
@@ -90,12 +106,14 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
 .services-description {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
 }
+
 /* Поиск гостиницы */
 .search-hotels-title {
   font-weight: 700;
@@ -105,12 +123,14 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
 .search-hotels-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
 }
+
 /*Подписка*/
 .subscribe-title {
   font-weight: 700;
@@ -120,6 +140,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .subscribe-description {
   font-size: 22px;
   line-height: 26px;
@@ -127,11 +148,21 @@ body {
   color: #ffffff;
 }
 
+/* Подвал */
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
 
 
 
 
-
+/* Скрыть элемент */
 .visually-hidden {
   display: none;
 }
