@@ -19,12 +19,12 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #7a8b85ea;
 }
 
 .page-header {
-  color: inherit;
-  background-color: #ffffff;
+  color: #000000;
+
 }
 
 .navigation-link {
@@ -38,7 +38,7 @@ body {
 
 .main-index {
   color: #000000;
-  background-color: #ffffff;
+
   background-image: url(/images/main/mountains.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
 .page-start-text {
   text-align: center;
 }
-
+/*Седона — небольшой городок в Аризоне, заслуживающий большего!*/
 .start-title {
   font-weight: 700;
   font-size: 30px;
@@ -59,4 +59,35 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-color-white {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+.visually-hidden {
+  display: none;
 }
