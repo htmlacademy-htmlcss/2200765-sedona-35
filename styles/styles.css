@@ -60,7 +60,7 @@ body {
   line-height: 26px;
   color: #333333;
 }
-
+/* Преимущества */
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -81,7 +81,51 @@ body {
 .advantages-color-white {
   color: #ffffff;
 }
-
+/* Доступный сервис */
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+/* Поиск гостиницы */
+.search-hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.search-hotels-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+/*Подписка*/
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
 
 
 
