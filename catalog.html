@@ -95,8 +95,24 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">ПРИМЕНИТЬ</button>
           </form>
+        </section>
+        <section class="filter-price">
+          <h2 class="filter-price-title">Стоимость, ₽:</h2>
+          <div class="range">
+            <label class="filter-price-min">
+               <input type="number" name="min-price" min="0" max="9000" value="0">
+               <span>от</span>
+            </label>
+            <label class="filter-price-max">
+               <input  type="number" name="max-price" min="1" max="9000" value="9000">
+               <span >до</span>
+             </label>
+         </div>
+        </section>
+        <section class="filter-buttons">
+          <button class="button" type="submit">ПРИМЕНИТЬ</button>
+          <button class="button" type="submit">Сбросить</button>
         </section>
       </header>
       <section class="sorting">
@@ -107,22 +123,22 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
         <a class="button button-light" href="#" >
-        <span class="visually-hidden">Показать карточки</span>
+        <span class="visually-hidden">Карточки в виде таблицы</span>
         <img class="sorting-table" src="images/catalog/icon_view_card.svg" width="16" height="14" alt="Карточки в виде таблицы">
         </a>
         <a class="button" href="#">
-        <span class="visually-hidden">Показать скроллинг кароточек</span>
+        <span class="visually-hidden">Карточки в виде слайдов</span>
         <img class="sorting-slide" src="images/catalog/icon_view_slide.svg" width="16" height="14" alt="Карточки в виде слайдов">
         </a>
         <a class="button" href="#">
-        <span class="visually-hidden">Показать список</span>
+        <span class="visually-hidden">Карточки в виде списка</span>
         <img class="sorting-list" src="images/catalog/icon_view_list.svg" width="16" height="14" alt="Карточки в виде списка">
         </a>
       </section>
       <section class="catalog-hotels">
         <ul class="product-list">
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
@@ -133,7 +149,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 8,5</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
@@ -144,7 +160,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 9,2</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
@@ -155,7 +171,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 6,9</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
@@ -180,7 +196,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-hidden" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -189,7 +205,7 @@
       </section>
       <section class="subscribe-inner">
         <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-inner-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newletter-email-inner">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email-inner" required>
