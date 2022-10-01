@@ -132,6 +132,13 @@ body {
 }
 
 /*Подписка*/
+.subscribe-block {
+  background-image: url(../images/main/subscribe-fon.jpg);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
 .subscribe-title {
   font-weight: 700;
   font-size: 30px;
@@ -194,6 +201,13 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.inner-header {
+  background-image: url(../images/catalog/catalog-background.jpg);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  color: #000000;
 }
 
 /*Сортировка*/
