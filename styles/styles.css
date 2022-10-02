@@ -20,6 +20,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #7a8b85ea;
+  margin: 0;
 }
 
 /*Кнопка*/
@@ -41,6 +42,37 @@ body {
 }
 
 /* Навигационные кнопки */
+.navigation {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row; /*направление оси*/
+  justify-content: space-between; /*выравнивание вдоль главной оси*/
+  align-items: flex-start; /*выравнивание поперечной оси*/
+  flex-wrap: nowrap; /*перенос элементов*/
+  align-content: stretch; /*выравнивание рядов вдоль поперечной оси, отключает items(не-stretch)*/
+  margin: auto; /*центрирование*/
+}
+
+.navigation-logo {
+  order: 1;
+  align-self: flex-start; /*поперечное выравнивание элемента*/
+}
+
+.navigation-list {
+  order: 2;
+  align-self: center;
+}
+
+.navigation-list-right {
+  order: 3;
+  align-self: center;
+}
+
+.button-navigation {
+  order: 4;
+  align-self: center;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
