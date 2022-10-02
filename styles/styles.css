@@ -45,12 +45,14 @@ body {
 .navigation {
   background-color: #FFFFFF;
   display: flex;
+  width: 1200px;
+  height: 64px;
   flex-direction: row; /*направление оси*/
   justify-content: space-between; /*выравнивание вдоль главной оси*/
   align-items: flex-start; /*выравнивание поперечной оси*/
   flex-wrap: nowrap; /*перенос элементов*/
   align-content: stretch; /*выравнивание рядов вдоль поперечной оси, отключает items(не-stretch)*/
-  margin: auto; /*центрирование*/
+
 }
 
 .navigation-logo {
@@ -86,7 +88,7 @@ body {
 .main-index {
   color: #000000;
   background-image: url(../images/main/mountains.jpg);
-  background-size: 100% auto;
+  background-size: 1200px 485px;
   background-repeat: no-repeat;
 }
 
