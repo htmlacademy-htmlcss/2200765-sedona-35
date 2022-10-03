@@ -252,7 +252,17 @@ body {
 }
 
 /* Поиск гостиницы */
+.search-hotels {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 406px;
+}
+
 .search-hotels-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 96px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -262,21 +272,35 @@ body {
 }
 
 .search-hotels-description {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
 }
 
+.button-search-hotels {
+  margin: 0;
+  padding: 0;
+  margin-top: 62px;
+  text-align: center;
+}
+
 /*Подписка*/
 .subscribe-block {
-  background-image: url(../images/main/subscribe-fon.jpg);
-  background-size: auto auto;
-  background-repeat: no-repeat;
   color: #000000;
+  background-image: url(../images/main/subscribe-fon.jpg);
+  margin: 0 auto;
+  height: 415px;
+  background-repeat: no-repeat;
 }
 
 .subscribe-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 96px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
