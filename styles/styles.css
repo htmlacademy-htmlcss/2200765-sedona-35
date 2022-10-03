@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -21,6 +25,10 @@ body {
   color: #000000;
   background-color: #7a8b85ea;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
 }
 
 /*Кнопка*/
@@ -47,8 +55,9 @@ body {
   display: flex;
   width: 1200px;
   height: 64px;
+  margin: 0 auto;
   flex-direction: row; /*направление оси*/
-  justify-content: space-between; /*выравнивание вдоль главной оси*/
+  justify-content: stretch; /*выравнивание вдоль главной оси*/
   align-items: flex-start; /*выравнивание поперечной оси*/
   flex-wrap: nowrap; /*перенос элементов*/
   align-content: stretch; /*выравнивание рядов вдоль поперечной оси, отключает items(не-stretch)*/
@@ -56,22 +65,39 @@ body {
 }
 
 .navigation-logo {
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  width: 138px;
   order: 1;
   align-self: flex-start; /*поперечное выравнивание элемента*/
 }
 
 .navigation-list {
+  margin: 0;
+  margin-left: 28px;
+  padding: 0;
+  list-style: none;
+  width: 339px;
   order: 2;
   align-self: center;
 }
 
 .navigation-list-right {
+  margin: 0;
+  margin-left: 285px;
+  padding: 0;
+  list-style: none;
+  width: 88px;
   order: 3;
   align-self: center;
 }
 
 .button-navigation {
+  margin: 0;
+  padding: 0;
   order: 4;
+  width: 180px;
   align-self: center;
 }
 
@@ -85,6 +111,10 @@ body {
 }
 
 /* Стартовый блок */
+.main-container{
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-image: url(../images/main/mountains.jpg);
