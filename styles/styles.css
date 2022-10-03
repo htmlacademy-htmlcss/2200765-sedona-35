@@ -317,6 +317,16 @@ body {
 }
 
 /* Подвал */
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -326,6 +336,14 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.footer-social-item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+
 
 /*Каталог*/
 /*Фильтр поиска*/
