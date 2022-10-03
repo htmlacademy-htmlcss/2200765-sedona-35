@@ -321,10 +321,20 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 142px;
+}
+
+.footer-address {
+  width: 720px;
 }
 
 .footer-contacts-phone {
