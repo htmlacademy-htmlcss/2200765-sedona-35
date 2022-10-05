@@ -359,6 +359,15 @@ body {
 
 /*Каталог*/
 /*Фильтр поиска*/
+.filter-container {
+  display: flex;
+}
+
+.hotels-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -395,8 +404,10 @@ body {
 }
 
 .inner-header {
+  display: flex;
+  flex-direction: row;
   background-image: url(../images/catalog/catalog-background.jpg);
-  background-size: auto auto;
+  margin: 0 auto;
   background-repeat: no-repeat;
   color: #000000;
 }
