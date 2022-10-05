@@ -3,36 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <ul class="navigation-list-right">
-          <li class="navigation-item-right">
-            <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-            <img class="page-header-logo" src="images/header/search.svg" width="18" height="18" alt="Значок Поиска">
-            </a>
-          </li>
-          <li class="navigation-item-right">
-            <a class="navigation-link" href="#">
-            <span class="visually-hidden">Избранное</span>
-            <img class="page-header-logo" src="images/header/like.svg" width="18" height="17" alt="Значок лайка">
-            <img class="page-header-logo" src="images/header/green-circle.svg" width="20" height="20" alt="Кружок с количеством лайков">
-            </a>
-          </li>
-        </ul>
+    <nav class="navigation">
+      <a class="navigation-logo" href="index.html">
+      <img class="page-header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона">
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list-right">
+        <li class="navigation-item-right">
+          <a class="navigation-link" href="#">
+          <span class="visually-hidden">Поиск</span>
+          <img class="page-header-logo" src="images/header/search.svg" width="18" height="18" alt="Значок Поиска">
+          </a>
+        </li>
+        <li class="navigation-item-right">
+          <a class="navigation-link" href="#">
+          <span class="visually-hidden">Избранное</span>
+          <img class="page-header-logo" src="images/header/like.svg" width="18" height="17" alt="Значок лайка">
+          </a>
+        </li>
+      </ul>
+      <div class="button-navigation">
         <a class="button" href="#">ХОЧУ СЮДА!</a>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <main class="main-inner">
       <header class="inner-header">
         <section class="filter-hostel">
@@ -41,12 +47,8 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
-              <img class="breadcrumbs-link" src="images/catalog/icon_house.svg" width="12" height="12" alt="Значок Домика">
+              <img class="breadcrumbs-link" src="images/catalog/icon-house.svg" width="12" height="12" alt="Значок Домика">
               </a>
-            </li>
-            <li>
-              <span class="visually-hidden">Стрелочка</span>
-              <img class="breadcrumbs-link" src="images/catalog/icon_arrow.svg" width="7" height="10" alt="Стрелочка">
             </li>
             <li  class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -94,8 +96,25 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">ПРИМЕНИТЬ</button>
           </form>
+        </section>
+        <section class="filter-price">
+          <h2 class="filter-price-title">Стоимость, ₽:</h2>
+          <div class="range">
+            <label class="filter-price-min">
+            <input type="number" name="min-price" min="0" max="9000" value="0">
+            <span>от</span>
+            </label>
+            <label class="filter-price-max">
+            <input  type="number" name="max-price" min="1" max="9000" value="9000">
+            <span >до</span>
+            </label>
+          </div>
+        </section>
+        <section class="filter-buttons">
+          <h2 class="visually-hidden">Кнопки для запуска фильтра</h2>
+          <button class="button" type="submit">ПРИМЕНИТЬ</button>
+          <button class="button" type="submit">Сбросить</button>
         </section>
       </header>
       <section class="sorting">
@@ -106,22 +125,22 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
         <a class="button button-light" href="#" >
-        <span class="visually-hidden">Показать карточки</span>
-        <img class="sorting-table" src="images/catalog/icon_view_card.svg" width="16" height="14" alt="Карточки в виде таблицы">
+        <span class="visually-hidden">Карточки в виде таблицы</span>
+        <img class="sorting-table" src="images/catalog/icon-view-card.svg" width="16" height="14" alt="Карточки в виде таблицы">
         </a>
         <a class="button" href="#">
-        <span class="visually-hidden">Показать скроллинг кароточек</span>
-        <img class="sorting-slide" src="images/catalog/icon_view_slide.svg" width="16" height="14" alt="Карточки в виде слайдов">
+        <span class="visually-hidden">Карточки в виде слайдов</span>
+        <img class="sorting-slide" src="images/catalog/icon-view-slide.svg" width="16" height="14" alt="Карточки в виде слайдов">
         </a>
         <a class="button" href="#">
-        <span class="visually-hidden">Показать список</span>
-        <img class="sorting-list" src="images/catalog/icon_view_list.svg" width="16" height="14" alt="Карточки в виде списка">
+        <span class="visually-hidden">Карточки в виде списка</span>
+        <img class="sorting-list" src="images/catalog/icon-view-list.svg" width="16" height="14" alt="Карточки в виде списка">
         </a>
       </section>
       <section class="catalog-hotels">
         <ul class="product-list">
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
@@ -132,7 +151,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 8,5</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
@@ -143,7 +162,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 9,2</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
@@ -154,7 +173,7 @@
             <p class="hotel-raiting">РЕЙТИНГ: 6,9</p>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
@@ -179,7 +198,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-hidden" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -188,7 +207,7 @@
       </section>
       <section class="subscribe-inner">
         <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-inner-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newletter-email-inner">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email-inner" required>
@@ -221,13 +240,15 @@
         </ul>
       </section>
       <section class="footer-contacts">
-        <address>
-          <h2 class="visually-hidden">Контактный телефон</h2>
+        <h2 class="visually-hidden">Контактный телефон</h2>
+        <address class="footer-address">
           <a class="footer-contacts-phone" href="tel:88128121212"> +7 (812) 812-12-12</a>
         </address>
       </section>
       <section class="logo-htmlacademy">
         <h2 class="visually-hidden">Логотип HTMLAcademy</h2>
-        <img class="footer-logo-htmlacademy" src="images/footer/HTML_Academy-logo.svg" width="115" height="33" alt="Логотип HTMLAcademy">
+        <img class="footer-logo-htmlacademy" src="images/footer/html-academy-logo.svg" width="115" height="33" alt="Логотип HTMLAcademy">
       </section>
     </footer>
+  </body>
+</html>
