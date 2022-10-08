@@ -31,6 +31,18 @@ body {
 
 }
 
+/* Скрыть элемент */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Кнопка*/
 .button {
   font-weight: 700;
@@ -51,64 +63,65 @@ body {
 
 /* Навигационные кнопки */
 .navigation {
+  color: #000000;
   background-color: #FFFFFF;
   display: flex;
   width: 1200px;
-  height: 64px;
   margin: 0 auto;
   flex-direction: row; /*направление оси*/
   justify-content: stretch; /*выравнивание вдоль главной оси*/
   align-items: flex-start; /*выравнивание поперечной оси*/
-  flex-wrap: nowrap; /*перенос элементов*/
-  align-content: stretch; /*выравнивание рядов вдоль поперечной оси, отключает items(не-stretch)*/
-
+  flex-wrap: wrap; /*перенос элементов*/
 }
 
 .navigation-logo {
   margin: 0;
   margin-left: 70px;
   padding: 0;
-  width: 138px;
-  order: 1;
-  align-self: flex-start; /*поперечное выравнивание элемента*/
+  width: 140px;
 }
 
 .navigation-list {
   margin: 0;
   margin-left: 28px;
   padding: 0;
-  list-style: none;
-  width: 339px;
-  order: 2;
-  align-self: center;
+  list-style-type: none;
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .navigation-list-right {
   margin: 0;
   margin-left: 285px;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   width: 88px;
-  order: 3;
+
   align-self: center;
 }
 
 .button-navigation {
   margin: 0;
   padding: 0;
-  order: 4;
+
   width: 180px;
   align-self: center;
 }
 
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-}
+
 
 /* Стартовый блок */
 .main-container{
@@ -479,20 +492,4 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Скрыть элемент */
-.visually-hidden {
-  display: none;
 }
