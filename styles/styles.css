@@ -66,7 +66,8 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   display: flex;
-  width: 1200px;
+  min-width: 1200px;
+  /*min-height: 64px;*/ /*почему-то не работает?*/
   margin: 0 auto;
   flex-direction: row; /*направление оси*/
   justify-content: stretch; /*выравнивание вдоль главной оси*/
@@ -78,7 +79,7 @@ body {
   margin: 0;
   margin-left: 70px;
   padding: 0;
-  width: 140px;
+  min-width: 140px;
 }
 
 .navigation-list {
@@ -130,11 +131,10 @@ body {
   align-self: center;
 }
 
-
-
 /* Стартовый блок */
-.main-container{
-  flex-grow: 1;
+.main-container {
+  padding-top: 51px;
+  flex-grow: 1; /*что это?*/
 }
 
 .main-index {
@@ -146,7 +146,7 @@ body {
 .front-welcome-img {
   display: block;
   margin: 0 auto;
-  margin-top: 51px;
+  margin-bottom: 151px;
 }
 .front-divider-img {
   display: block;
@@ -170,7 +170,6 @@ body {
 .start-title {
   margin: 0;
   padding: 0;
-  margin-top: 69px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -181,6 +180,7 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 25px;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -193,7 +193,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  list-style: none;
+  list-style-type: none;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -201,8 +201,8 @@ body {
 .advantages-item {
   margin: 0;
   padding: 0;
-  width: 400px;
-  height: 384px;
+  min-width: 400px;
+  min-height: 384px;
   background-color: #82B3D3;
   color: #FFFFFF;
   display: flex;
@@ -216,12 +216,23 @@ body {
 .color-2 {
   background-color: rgba(131, 179, 211, 0.2);
 }
-.color-3 {
-  color: #ffffff;
+
+.advantages-title-1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 92px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
-
-.advantages-title {
+.advantages-title-2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 102px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -230,13 +241,29 @@ body {
   color: #000000;
 }
 
-.advantages-description {
+.advantages-description-1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 62px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.advantages-description-2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 62px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #333333;
 }
 
+.advantages-image {
+  display: flex;
+}
 
 /* Доступный сервис */
 .services-list {
