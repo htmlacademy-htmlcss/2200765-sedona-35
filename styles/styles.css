@@ -401,29 +401,33 @@ body {
 /* Подвал */
 .page-footer-container {
   display: flex;
-  width: 1200px;
+  justify-content: space-between;
+  width: 1060px;
   margin: 0 auto;
+  padding: 40px 70px 30px;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-}
-
-.footer-social-item {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
 }
 
 .footer-social-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   display: flex;
-  width: 142px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.footer-address {
-  width: 720px;
+.footer-social-item {
+  margin: 0;
+  padding: 0;
+  min-width: 48px;
+  min-height: 40px;
+}
+
+.button-social {
+  background-color: #FFFFFF;
 }
 
 .footer-contacts-phone {
