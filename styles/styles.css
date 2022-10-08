@@ -105,19 +105,28 @@ body {
 
 .navigation-list-right {
   margin: 0;
-  margin-left: 285px;
+  margin-left: auto;
+  margin-right: 70px;
   padding: 0;
   list-style-type: none;
-  width: 88px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  align-self: center;
+.navigation-item-right {
+  display: flex;
+}
+
+.navigation-item-right .navigation-link {
+  min-width: 18px;
+  min-height: 24px;
 }
 
 .button-navigation {
   margin: 0;
-  padding: 0;
-
-  width: 180px;
+  padding: 8px 34px;
+  background: #756157;
+  border-radius: 4px;
   align-self: center;
 }
 
