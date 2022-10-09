@@ -442,7 +442,8 @@ body {
 /*Хэдэр*/
 .filter-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-image: url(../images/catalog/catalog-background.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -454,6 +455,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-width: 1060px;
 }
 
 .breadcrumbs {
@@ -480,6 +482,21 @@ body {
 }
 
 /*формы*/
+.filter {
+  margin: 0 70px 70px 70px;
+  padding: 0;
+  min-width: 1060px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -502,6 +519,34 @@ body {
   color: #FFFFFF;
 }
 
+.filter-buttons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-filter-apply {
+  margin: 0;
+  margin-top: 56px;
+  padding: 8px 50px;
+  min-width: 190px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.button-filter-reset {
+  margin: 0;
+  padding: 8px 50px;
+  margin-top: 32px;
+  min-width: 190px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0;
+}
 
 /*Сортировка*/
 .sorting-title {
