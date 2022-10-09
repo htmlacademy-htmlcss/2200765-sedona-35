@@ -50,7 +50,7 @@ body {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  background-color: #403a3a;
+  background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -549,7 +549,19 @@ body {
 }
 
 /*Сортировка*/
+.sorting {
+  margin: 50px 70px 40px;
+  padding: 0;
+  min-width: 1060px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sorting-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -561,6 +573,29 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.buttons-view {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.sorting-view-item {
+  min-height: 48px;
+  min-width: 48px;
+  margin-left: 8px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-grey {
+  border: 2px solid #E5E5E5;
 }
 
 /*Карточки гостиниц*/
