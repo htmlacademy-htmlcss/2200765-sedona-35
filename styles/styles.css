@@ -72,6 +72,7 @@ body {
   justify-content: stretch; /*выравнивание вдоль главной оси*/
   align-items: flex-start; /*выравнивание поперечной оси*/
   flex-wrap: wrap; /*перенос элементов*/
+  position: relative;
 }
 
 .navigation-logo {
@@ -80,6 +81,7 @@ body {
   margin-left: 70px;
   padding: 0;
   max-height: 64px; /*это неправильно*/
+
 }
 
 .navigation-list {
