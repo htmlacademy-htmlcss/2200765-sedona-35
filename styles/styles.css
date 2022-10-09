@@ -67,7 +67,6 @@ body {
   background-color: #FFFFFF;
   display: flex;
   min-width: 1200px;
-  /*min-height: 64px;*/ /*почему-то не работает?*/
   margin: 0 auto;
   flex-direction: row; /*направление оси*/
   justify-content: stretch; /*выравнивание вдоль главной оси*/
@@ -76,10 +75,11 @@ body {
 }
 
 .navigation-logo {
+  display: block;
   margin: 0;
   margin-left: 70px;
   padding: 0;
-  min-width: 140px;
+  max-height: 64px; /*это неправильно*/
 }
 
 .navigation-list {
@@ -361,7 +361,7 @@ body {
   color: #000000;
   background-image: url(../images/main/subscribe-fon.jpg);
   margin: 0 auto;
-  min-height: 415px;
+  min-height: 411px;
   background-repeat: no-repeat;
 }
 
