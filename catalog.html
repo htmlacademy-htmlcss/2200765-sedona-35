@@ -214,21 +214,23 @@
                 <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-hidden" href="#">...</a>
+                <a class="pagination-link pagination-hidden" href="#">...</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
           </section>
-          <section class="subscribe-inner">
-            <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-inner-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-            <form class="newletter-form-inner" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newletter-email-inner">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email-inner" required>
-              <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
-            </form>
+          <section class="subscribe">
+            <div class="subscribe-block subscribe-catalog">
+              <h2 class="subscribe-title color-black">Подпишитесь на рассылку</h2>
+              <p class="subscribe-description color-black">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+              <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="newletter-email" class="visually-hidden">Email</label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email" required>
+                <button class="button button-subscribe" type="submit">ПОДПИСАТЬСЯ</button>
+              </form>
+            </div>
           </section>
         </div>
       </div>

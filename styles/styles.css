@@ -586,12 +586,11 @@ body {
   min-height: 48px;
   min-width: 48px;
   margin-left: 8px;
+  padding: 16px 17px;
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .border-grey {
@@ -599,6 +598,11 @@ body {
 }
 
 /*Карточки гостиниц*/
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 .product-card-title {
   font-weight: 700;
   font-size: 24px;
@@ -625,29 +629,63 @@ body {
 }
 
 /*Пагинация*/
+.pagination {
+  margin: 0 70px 60px;
+  padding: 0;
+  min-width: 1060px;
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  padding: 12px 24px;
   color: #FFFFFF;
   background-color: #82B3D3;
+  min-width: 60px;
+  min-height: 60px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.pagination-link:last-child {
+  padding: 12px 18px;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .pagination-hidden {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  padding: 16px 21px;
   color: #000000;
   background-color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/*подписка*/
+.subscribe-catalog {
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
+.color-black {
+  color: #000000;
 }
