@@ -605,12 +605,77 @@ body {
 }
 
 /*Карточки гостиниц*/
+.catalog-hotels {
+  margin: 0 70px;
+  padding: 0;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3,340px);
+  gap: 20px;
+
+}
+
+.product-card {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.product-card-info {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+/*кнопки*/
+.button-product-card {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.button-detail {
+
+  background: #756157;
+  border-radius: 4px;
+}
+.button-favourites {
+  background: #82B3D3;
+  border-radius: 4px;
+}
+/*звезды*/
+.hotel-stars {
+  margin: 0;
+  padding: 0;
+}
+/*рейтинг*/
+.hotel-raiting {
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+
+
+
 .product-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 .product-card-title {
+  margin: 16px 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -618,6 +683,7 @@ body {
 }
 
 .product-card-link {
+
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -628,7 +694,16 @@ body {
   color: #333333;
 }
 
+.product-card-price {
+  justify-self: end;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .hotel-raiting {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
