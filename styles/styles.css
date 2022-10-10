@@ -614,7 +614,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3,340px);
   gap: 20px;
-
 }
 
 .product-card {
@@ -623,15 +622,11 @@ body {
   padding: 20px;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
 }
 
-.product-card-info {
-  display: grid;
-  grid-template-columns: 140px 140px;
-  gap: 16px 20px;
-}
 
 /*кнопки*/
 .button-product-card {
@@ -643,14 +638,17 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #000000;
+
 }
 
 .button-detail {
-
+  padding: 8px 25px;
   background: #756157;
   border-radius: 4px;
 }
+
 .button-favourites {
+
   background: #82B3D3;
   border-radius: 4px;
 }
@@ -658,9 +656,20 @@ body {
 .hotel-stars {
   margin: 0;
   padding: 0;
+  background-image: url(../images/catalog/stars-4.svg);
+  background-repeat: no-repeat;
 }
+
+.four-stars{
+  background-repeat:space;
+}
+
 /*рейтинг*/
 .hotel-raiting {
+  align-self: center;
+  min-height: 37px;
+  min-width: 140px;
+  text-align: center;
   background: #F2F2F2;
   border-radius: 4px;
 }
