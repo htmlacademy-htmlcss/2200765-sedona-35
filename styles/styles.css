@@ -624,9 +624,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
+.product-card-info {
+  display: grid;
+  grid-template-columns: repeat(2,140px);
+  gap: 16px 20px;
+}
 
 /*кнопки*/
 .button-product-card {
@@ -648,31 +652,46 @@ body {
 }
 
 .button-favourites {
-
+  border: none;
   background: #82B3D3;
   border-radius: 4px;
 }
-/*звезды*/
+.button-favourites-on {
+  border: none;
+  background: #7DB54F;
+  border-radius: 4px;
+}
+/*звёзды*/
 .hotel-stars {
-  margin: 0;
-  padding: 0;
-  background-image: url(../images/catalog/stars-4.svg);
-  background-repeat: no-repeat;
+  min-width: 140px;
+  min-height: 37px;
 }
 
 .four-stars{
-  background-repeat:space;
+  background-image: url(../images/catalog/stars-4.svg);
+  background-repeat: no-repeat;
+}
+.three-stars {
+  background-image: url(../images/catalog/stars-3.svg);
+  background-repeat: no-repeat;
+}
+.two-stars{
+  background-image: url(../images/catalog/stars-2.svg);
+  background-repeat: no-repeat;
 }
 
 /*рейтинг*/
 .hotel-raiting {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 37px;
   min-width: 140px;
   text-align: center;
   background: #F2F2F2;
   border-radius: 4px;
 }
+
 
 
 
@@ -692,9 +711,7 @@ body {
 }
 
 .product-card-link {
-
   text-decoration: none;
-  text-transform: capitalize;
 }
 
 .product-card-type {
@@ -721,7 +738,7 @@ body {
 
 /*Пагинация*/
 .pagination {
-  margin: 0 70px 60px;
+  margin: 80px 0 60px;
   padding: 0;
   min-width: 1060px;
   display: flex;
