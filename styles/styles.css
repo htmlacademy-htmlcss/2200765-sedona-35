@@ -58,12 +58,9 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-/*Большая кнопка*/
-.button-big {
-  font-size: 20px;
-  line-height: 36px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
 }
 
 /* Навигационные кнопки */
@@ -86,7 +83,6 @@ body {
   margin-left: 70px;
   padding: 0;
   max-height: 64px; /*это неправильно*/
-
 }
 
 .navigation-list {
@@ -648,11 +644,13 @@ body {
 }
 
 .button-favourites {
+  padding: 8px 20px;
   border: none;
   background: #82B3D3;
   border-radius: 4px;
 }
 .button-favourites-on {
+  padding: 8px 18px;
   border: none;
   background: #7DB54F;
   border-radius: 4px;
