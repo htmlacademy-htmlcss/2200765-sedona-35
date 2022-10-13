@@ -105,6 +105,7 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize;
+  position: relative;
 }
 
 .navigation-list-right {
@@ -115,10 +116,15 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .navigation-item-right {
   display: flex;
+}
+
+.navigation-item-right:last-child {
+  margin-left: 20px;
 }
 
 .navigation-item-right .navigation-link {
@@ -132,6 +138,16 @@ body {
   background: #756157;
   border-radius: 4px;
   align-self: center;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 
 /* Стартовый блок */
@@ -420,12 +436,7 @@ body {
 .footer-social-item {
   margin: 0;
   padding: 0;
-  min-width: 48px;
-  min-height: 40px;
-}
 
-.button-social {
-  background-color: #FFFFFF;
 }
 
 .footer-contacts-phone {
@@ -436,6 +447,40 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-social-link {
+  display: block;
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 40px;
+}
+
+.footer-social-vk {
+  background-image: url("../images/footer/vk-logo.svg");
+  background-size: 25px 15px;
+}
+
+.footer-social-telegram {
+  background-image: url("../images/footer/telegram-logo.svg");
+  background-size: 18px 16px;
+}
+
+.footer-social-youtube {
+  background-image: url("../images/footer/youtube-logo.svg");
+  background-size: 23px 18px;
+}
+
+.footer-social-htmlacademy {
+  display: block;
+  background-image: url("../images/footer/html-academy-logo.svg");
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 115px;
+  height: 34px;
 }
 
 /*Каталог*/
