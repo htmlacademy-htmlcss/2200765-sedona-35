@@ -74,6 +74,7 @@ body {
   justify-content: stretch; /*выравнивание вдоль главной оси*/
   flex-wrap: wrap; /*перенос элементов*/
   position: relative;
+  z-index: 1;
 }
 
 .navigation-logo {
@@ -192,15 +193,6 @@ body {
 }
 
 /* Стартовый блок */
-.main-index {
-  width: 1200px;
-  background-color: white;
-  color: #000000;
-  background-image: url(../images/main/mountains.jpg);
-  margin: 0 auto;
-  background-repeat: no-repeat;
-}
-
 .main-container {
   width: 1200px;
   margin: 0 auto;
@@ -208,21 +200,39 @@ body {
   color: #000000;
 }
 
+.front-img {
+  background-color: #756157;
+  min-height: 485px;
+  background-image: url(../images/main/mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.front-img::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../images/main/divider.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 57px;
+  background-size:cover;
+}
+
 .front-welcome-img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 151px;
   padding-top: 51px;
 }
-.front-divider-img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 25px;
-}
+
 
 
 /*Подпись под стартовым блоком*/
 .page-start-text {
+  margin-top: 69px;
   display: block;
   text-align: center;
 }
@@ -267,6 +277,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.advantages-item:first-child::after {
+  position: absolute;
+  right: 170px;
+  top: 178px;
+  left: 170px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);;
+  content: "";
+}
+
+.advantages-item:last-child::after {
+  position: absolute;
+  right: 170px;
+  top: 178px;
+  left: 170px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);;
+  content: "";
+}
+
+.advantages-item::after {
+  position: absolute;
+  right: 170px;
+  top: 178px;
+  left: 170px;
+  height: 2px;
+  background-color:rgba(0, 0, 0, 0.3);;
+  content: "";
 }
 
 .color-lightblue {
@@ -340,16 +381,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
-.services-image {
-  padding-top: 80px;
+.icon-house {
+  background-image: url(../images/main/icon-house.svg);
+  background-size: 76px 72px;
+  background-repeat: no-repeat;
+  background-position: center top 80px;
+}
+.icon-food {
+  background-image: url(../images/main/icon-food.svg);
+  background-size: 75px 70px;
+  background-repeat: no-repeat;
+  background-position: center top 81px;
+}
+.icon-souvenir {
+  background-image: url(../images/main/icon-souvenir.svg);
+  background-size: 65px 76px;
+  background-repeat: no-repeat;
+  background-position: center top 78px;
 }
 
 .services-title {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 182px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
