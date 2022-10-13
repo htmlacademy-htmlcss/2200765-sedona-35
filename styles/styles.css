@@ -152,11 +152,21 @@ body {
 
 /* Стартовый блок */
 .main-index {
+  width: 1200px;
+  background-color: white;
   color: #000000;
   background-image: url(../images/main/mountains.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
 }
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  color: #000000;
+}
+
 .front-welcome-img {
   display: block;
   margin: 0 auto;
@@ -171,13 +181,6 @@ body {
 
 
 /*Подпись под стартовым блоком*/
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-
-}
-
 .page-start-text {
   display: block;
   text-align: center;
@@ -421,6 +424,7 @@ body {
   padding: 40px 70px 30px;
   flex-direction: row;
   align-items: center;
+  background-color: white;
 }
 
 .footer-social-list {
@@ -451,7 +455,7 @@ body {
 
 .footer-social-link {
   display: block;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -476,7 +480,7 @@ body {
 .footer-social-htmlacademy {
   display: block;
   background-image: url("../images/footer/html-academy-logo.svg");
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
   width: 115px;
@@ -486,6 +490,8 @@ body {
 /*Каталог*/
 /*Фильтр поиска*/
 /*Хэдэр*/
+
+
 .filter-container {
   display: flex;
   flex-direction: row;
