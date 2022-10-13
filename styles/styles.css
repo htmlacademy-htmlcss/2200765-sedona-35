@@ -626,21 +626,24 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sorting-view-item {
-  min-height: 48px;
-  min-width: 48px;
+.sorting-view-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
   margin-left: 8px;
-  padding: 16px 17px;
   box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
-  display: block;
 }
 
-.border-grey {
-  border: 2px solid #E5E5E5;
+.sorting-view-link-current {
+  border-color: #000000;
 }
 
 /*Карточки гостиниц*/
