@@ -558,8 +558,20 @@ body {
   color: #000000;
 }
 
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
@@ -567,29 +579,30 @@ body {
   height: 40px;
 }
 
-.footer-social-vk {
-  background-image: url("../images/footer/vk-logo.svg");
-  background-size: 25px 15px;
+.footer-social-logo {
+  fill: #83B3D3;
+}
+.footer-social-link:hover .footer-social-logo {
+  fill: #68A2CA;
+}
+.footer-social-link:focus .footer-social-logo {
+  fill: #68A2CA;
+}
+.footer-social-link:active .footer-social-logo {
+  fill:rgba(104, 162, 202, 0.3);
 }
 
-.footer-social-telegram {
-  background-image: url("../images/footer/telegram-logo.svg");
-  background-size: 18px 16px;
+.htmlacademy-icon {
+  fill: #000000;
 }
-
-.footer-social-youtube {
-  background-image: url("../images/footer/youtube-logo.svg");
-  background-size: 23px 18px;
+.footer-social-htmlacademy:hover .htmlacademy-icon {
+  fill: #756157;
 }
-
-.footer-social-htmlacademy {
-  display: block;
-  background-image: url("../images/footer/html-academy-logo.svg");
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 115px;
-  height: 34px;
+.footer-social-htmlacademy:focus .htmlacademy-icon {
+  fill: #756157;
+}
+.footer-social-htmlacademy:active .htmlacademy-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*Каталог*/
