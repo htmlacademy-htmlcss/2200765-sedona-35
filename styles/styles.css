@@ -785,6 +785,16 @@ body {
   border-color: #000000;
 }
 
+.sorting-view-link:hover {
+  border-color: #000000;
+}
+.sorting-view-link:focus {
+  border: 2px solid #68A2CA;
+}
+.sorting-view-link:active {
+  border-color: #000000;
+}
+
 /*Карточки гостиниц*/
 .catalog-hotels {
   margin: 0 70px;
@@ -930,7 +940,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  padding: 12px 24px;
+  padding-top: 12px;
   color: #FFFFFF;
   background-color: #82B3D3;
   min-width: 60px;
@@ -939,16 +949,19 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
-.pagination-link:last-child {
-  padding: 12px 18px;
-}
-
 .pagination-current {
-  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding-top: 12px;
+  min-width: 60px;
+  min-height: 60px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
@@ -959,10 +972,25 @@ body {
   line-height: 26px;
   padding: 16px 21px;
   color: #000000;
-  background-color: #FFFFFF;
   text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+  display: block;
+}
+
+.pagination-link:hover {
+  color: #FFFFFF;
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+  padding-top: 11px;
+}
+.pagination-link:focus {
+  color: #FFFFFF;
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+  padding-top: 11px;
+}
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
 }
 
 /*подписка*/
