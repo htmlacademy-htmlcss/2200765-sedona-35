@@ -14,29 +14,11 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #f2f2f2;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 1280px;
-  min-height: 100%;
-}
-
-/* Скрыть элемент */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,14 +30,30 @@ body {
   overflow: hidden;
 }
 
-/*Кнопка*/
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  min-height: 100%;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -63,34 +61,28 @@ body {
   display: inline-block;
 }
 
-/* Навигационные кнопки */
+/* Навигация */
 .navigation {
-  color: #000000;
   background-color: #FFFFFF;
   display: flex;
   min-width: 1200px;
   margin: 0 auto;
-  flex-direction: row; /*направление оси*/
-  justify-content: stretch; /*выравнивание вдоль главной оси*/
-  flex-wrap: wrap; /*перенос элементов*/
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
 }
 
 .navigation-logo {
-  display: block;
-  margin: 0;
   margin-left: 70px;
-  padding: 0;
-  max-height: 64px; /*это неправильно*/
+  max-height: 64px;
 }
 
 .navigation-list {
   margin: 0;
-  margin-left: 28px;
   padding: 0;
+  margin-left: 28px;
   list-style-type: none;
-  width: 460px;
+  max-width: 460px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -126,7 +118,6 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .navigation-item-right {
@@ -179,7 +170,7 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   content: "12";
   left: 20px;
   top: 11px;
@@ -196,7 +187,7 @@ body {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -227,8 +218,6 @@ body {
   margin: 0 auto;
   padding-top: 51px;
 }
-
-
 
 /*Подпись под стартовым блоком*/
 .page-start-text {
@@ -381,7 +370,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .icon-house {
@@ -466,7 +454,7 @@ body {
 .button-search-hotels {
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -499,7 +487,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .subscribe-description {
@@ -510,7 +498,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .button-subscribe {
@@ -529,7 +517,7 @@ body {
   padding: 40px 70px 30px;
   flex-direction: row;
   align-items: center;
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .footer-social-list {
@@ -545,7 +533,6 @@ body {
 .footer-social-item {
   margin: 0;
   padding: 0;
-
 }
 
 .footer-contacts-phone {
@@ -608,8 +595,6 @@ body {
 /*Каталог*/
 /*Фильтр поиска*/
 /*Хэдэр*/
-
-
 .filter-container {
   display: flex;
   flex-direction: row;
@@ -651,11 +636,8 @@ body {
   margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-
-
-
 
 .inner-header-title {
   margin: 0;
@@ -663,10 +645,10 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
-/*формы*/
+/*Формы*/
 .filter {
   margin: 0 70px 70px 70px;
   padding: 0;
@@ -777,7 +759,7 @@ body {
   width: 48px;
   margin-left: 8px;
   box-sizing: border-box;
-  border: 2px solid #e5e5e5;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
 
@@ -790,6 +772,7 @@ body {
 }
 .sorting-view-link:focus {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 .sorting-view-link:active {
   border-color: #000000;
@@ -830,7 +813,7 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #000000;
 }
 
@@ -852,6 +835,7 @@ body {
   background: #7DB54F;
   border-radius: 4px;
 }
+
 /*звёзды*/
 .hotel-stars {
   min-width: 140px;
@@ -999,6 +983,7 @@ body {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
   padding-top: 11px;
+  outline: none;
 }
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
