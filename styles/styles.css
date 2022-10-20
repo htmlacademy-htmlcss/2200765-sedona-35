@@ -636,6 +636,16 @@ body {
   min-width: 1060px;
 }
 
+.inner-header-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
 .breadcrumbs {
   margin: 0;
   padding: 0;
@@ -662,23 +672,42 @@ body {
   color: #FFFFFF;
 }
 
-.inner-header-title {
-  margin: 0;
+/*чекбоксы*/
+.filter {
+  margin: 0 70px 70px 70px;
   padding: 0;
-  padding-bottom: 8px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-  color: #FFFFFF;
-
+  min-width: 1060px;
+  display: flex;
 }
 
-/*чекбоксы*/
 .catalog-filter-group {
   margin: 0;
   margin-right: 70px;
   padding: 0;
   border: none;
+}
+
+.catalog-filter-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
 }
 
 .control {
@@ -749,37 +778,6 @@ body {
 
 .filter-price {
   margin-right: 71px;
-}
-
-/*Формы*/
-.filter {
-  margin: 0 70px 70px 70px;
-  padding: 0;
-  min-width: 1060px;
-  display: flex;
-}
-
-.catalog-filter-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.catalog-filter-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #FFFFFF;
-}
-
-.catalog-filter-item {
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -988,7 +986,7 @@ body {
   margin-right: auto;
 }
 
-/* Control */
+/*список сортировки */
 .select-control {
   padding: 12px 20px;
   padding-right: 103px;
@@ -1019,8 +1017,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-
+/*вид*/
 .buttons-view {
   margin: 0;
   margin-left: auto;
