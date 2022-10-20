@@ -123,14 +123,14 @@
             <section class="filter-price">
               <h2 class="filter-price-title">Стоимость, ₽:</h2>
               <div class="range">
-                <label class="filter-price-min">
-                  <input type="number" name="min-price" min="0" max="9000" value="0">
-                  <span>от</span>
-                </label>
-                <label class="filter-price-max">
-                  <input  type="number" name="max-price" min="1" max="9000" value="9000">
-                  <span>до</span>
-                </label>
+                <div class="range-wrapper-inputs">
+                  <label class="filter-price-min">
+                    <input class="field-price field-min" type="number" name="min-price" value="0">
+                  </label>
+                  <label class="filter-price-max">
+                    <input class="field-price field-max" type="number" name="max-price" value="9000">
+                  </label>
+                </div>
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px">
@@ -264,9 +264,11 @@
               <h2 class="subscribe-title color-black">Подпишитесь на рассылку</h2>
               <p class="subscribe-description color-black">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
               <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newletter-email" class="visually-hidden">Email</label>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email" required>
-                <button class="button button-subscribe" type="submit">Подписаться</button>
+                <label for="newletter-email">
+                  <span class="visually-hidden">Email</span>
+                </label>
+                <input id="newletter-email" class="field-email" placeholder="Ваш e-mail" type="email" name="email" required>
+                <button class="button-subscribe" type="submit">Подписаться</button>
               </form>
             </div>
           </section>
