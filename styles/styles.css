@@ -1101,12 +1101,31 @@ body {
   background-color: #000000;
 }
 
+/*подробнее*/
 .button-detail {
   padding: 8px 25px;
   background: #756157;
   border-radius: 4px;
 }
 
+.button-detail:hover,
+.button-detail:focus {
+  background: #615048;
+}
+
+.button-detail:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-detail:disabled,
+.button-favourites:disabled,
+.button-favourites-on:disabled {
+  background: #E5E5E5;
+  color: #FFFFFF;
+}
+
+/*в избранное*/
 .button-favourites {
   padding: 8px 20px;
   border: none;
@@ -1114,11 +1133,32 @@ body {
   border-radius: 4px;
 }
 
+.button-favourites:hover,
+.button-favourites:focus {
+  background: #68A2CA;
+}
+
+.button-favourites:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*в избранном*/
 .button-favourites-on {
   padding: 8px 18px;
   border: none;
   background: #7DB54F;
   border-radius: 4px;
+}
+
+.button-favourites-on:hover,
+.button-favourites-on:focus {
+  background: #6C9E42
+}
+
+.button-favourites-on:active {
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*звёзды*/
