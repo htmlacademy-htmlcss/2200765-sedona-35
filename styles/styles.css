@@ -667,6 +667,115 @@ body {
   text-transform: uppercase;
 }
 
+.field-group {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form .field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-date-field {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  width: 400px;
+  margin-left: auto;
+  padding: 12px 20px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+
+.text-modal-item {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 4px auto 23px 157px;
+}
+
+.status-error {
+  color: #FF5757;
+}
+
+.field-group-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 137px 110px 88px 85px 46px 110px;
+}
+
+.text-modal:nth-child(1) {
+  grid-column: 1 / 2;
+  align-self: center;
+}
+
+.text-modal:nth-child(3) {
+  grid-column: 4 / 5;
+  align-self: center;
+}
+
+.modal-people:nth-child(4) {
+  grid-column: 6 / 7;
+}
+
+.modal-people {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  width: 11px;
+  padding: 12px 50px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  position: relative;
+}
+
+/*.button-minus {
+  position: absolute;
+  border: none;
+}
+
+.button-plus {
+  position: absolute;
+  border: none;
+}*/
+
+.button-find {
+  margin-top: 48px;
+  padding: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  width: 577px;
+  height: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+
+.modal-container-close {
+  display: none;
+}
+
 /*Каталог*/
 /*Фильтр поиска*/
 /*Хэдэр*/
