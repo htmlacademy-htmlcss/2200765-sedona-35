@@ -43,8 +43,9 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  width: 1200px;
   min-height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -151,9 +152,6 @@ body {
   border-radius: 4px;
   align-self: center;
 }
-
-
-
 
 .navigation-icon {
   position: absolute;
@@ -329,10 +327,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
-
-
-
 .advantages-description-white {
   margin: 0;
   padding: 0;
@@ -354,7 +348,7 @@ body {
 }
 
 .advantages-image {
-  display: flex;
+  display: block;
 }
 
 /* Доступный сервис */
@@ -530,7 +524,7 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 35px;
   flex-direction: row;
   align-items: center;
   background-color: #FFFFFF;
@@ -625,6 +619,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .modal {
@@ -1301,6 +1296,21 @@ body {
   gap: 16px 20px;
 }
 
+.product-card-title {
+  margin: 15px 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-link {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
 /*кнопки*/
 .button-product-card {
   font-weight: 700;
@@ -1422,20 +1432,6 @@ body {
   text-align: center;
   background: #F2F2F2;
   border-radius: 4px;
-}
-
-
-.product-card-title {
-  margin: 16px 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-}
-
-.product-card-link {
-  text-decoration: none;
 }
 
 .product-card-type {
