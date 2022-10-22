@@ -674,9 +674,28 @@ body {
 
 .modal-form .field-group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.field-group-people {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-group-adults {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 247px;
+  position: relative;
+}
+
+.field-group-children {
+  display: flex;
+  align-items: center;
+  width: 242px;
+  position: relative;
 }
 
 .text-modal {
@@ -710,27 +729,6 @@ body {
   color: #FF5757;
 }
 
-.field-group-grid {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 137px 110px 88px 85px 46px 110px;
-  position: relative;
-}
-
-.text-modal:nth-child(1) {
-  grid-column: 1 / 2;
-  align-self: center;
-}
-
-.text-modal:nth-child(5) {
-  grid-column: 4 / 5;
-  align-self: center;
-}
-
-.modal-people:nth-child(7) {
-  grid-column: 6 / 7;
-}
-
 .modal-people {
   font-family: inherit;
   font-weight: 700;
@@ -738,10 +736,10 @@ body {
   line-height: 24px;
   width: 11px;
   padding: 12px 50px;
+  margin-left: auto;
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
-
 }
 
 .button-modal {
@@ -773,6 +771,19 @@ body {
 .button-plus-children {
   top: 14px;
   right: 10px;
+}
+
+.tooltip-children {
+  margin-left: 11px;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  background-image: url("../images/modal/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .button-find {
