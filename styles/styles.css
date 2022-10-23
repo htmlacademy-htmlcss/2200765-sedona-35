@@ -651,6 +651,13 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+.modal-close-button:active {
+  background-image: url("../images/modal/close-active.svg");
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -711,6 +718,18 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
+  background-image: url("../images/modal/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.modal-date-field:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-date-field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .text-modal-item {
@@ -756,6 +775,21 @@ body {
 .button-minus-children {
   top: 14px;
   right: 81px;
+}
+
+.button-modal:hover .button-condition,
+.button-modal:focus .button-condition {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-modal:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 3px;
+}
+.button-modal:active .button-condition {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 .button-plus {
@@ -850,6 +884,17 @@ body {
   cursor: pointer;
   border: none;
   display: inline-block;
+}
+
+.button-find:hover,
+.button-find:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.button-find:active {
+  background-color: #68A2CA;
+  color: rgba(242, 242, 242, 0.3);
 }
 
 .modal-container-close {
