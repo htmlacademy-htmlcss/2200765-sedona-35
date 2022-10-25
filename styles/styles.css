@@ -1012,6 +1012,11 @@ body {
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.control-label {
+  cursor: pointer;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
