@@ -163,7 +163,7 @@ body {
   fill: #000000;
 }
 
-.navigation-link-greencircle {
+.favorites-count {
   position: absolute;
   z-index: 1;
   margin-top: 11px;
@@ -645,7 +645,7 @@ body {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url("../images/modal/close.svg");
+  background-image: url(../images/modal/close.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -655,7 +655,7 @@ body {
   outline: 3px solid #83B3D3;
 }
 .modal-close-button:active {
-  background-image: url("../images/modal/close-active.svg");
+  background-image: url(../images/modal/close-active.svg);
 }
 
 .modal-title {
@@ -718,7 +718,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
-  background-image: url("../images/modal/calendar.svg");
+  background-image: url(../images/modal/calendar.svg);
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
@@ -856,7 +856,7 @@ body {
 
 .tooltip-text:after {
   content:'';
-  background-image: url("../images/modal/tooltip-arrow.svg");
+  background-image: url(../images/modal/tooltip-arrow.svg);
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1012,10 +1012,14 @@ body {
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-label {
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 6px;
   left: 4px;
@@ -1299,7 +1303,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   border: 2px solid #E5E5E5;
-  background-image: url("../images/catalog/select-arrow.svg");
+  background-image: url(../images/catalog/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
