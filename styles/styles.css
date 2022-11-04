@@ -69,6 +69,11 @@ img {
 }
 
 /* Навигация */
+.page-header {
+  min-height: 64px;
+  color: #000000;
+}
+
 .navigation {
   background-color: #FFFFFF;
   display: flex;
