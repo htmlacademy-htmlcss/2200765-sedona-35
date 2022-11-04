@@ -48,6 +48,11 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .button {
   font-family: inherit;
   font-weight: 700;
@@ -460,6 +465,7 @@ body {
   align-items: center;
   color: #000000;
   background-image: url("../images/main/subscribe-fon.jpg");
+  background-color: #ACAC69;
   margin: 0 auto;
   min-height: 414px;
   background-repeat: no-repeat;
@@ -915,6 +921,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   background-image: url("../images/catalog/catalog-background.jpg");
+  background-color: #333333;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1167,7 +1174,8 @@ body {
 /*убирает стрелочки*/
 .field-price::-webkit-outer-spin-button,
 .field-price::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1309,7 +1317,6 @@ body {
   background-repeat: no-repeat;
   background-position: right 16px center;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-radius: 4px;
 }
