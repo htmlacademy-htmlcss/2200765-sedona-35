@@ -983,6 +983,9 @@ img {
   margin: 0 70px 70px 70px;
   padding: 0;
   min-width: 1060px;
+}
+
+.catalog-filter {
   display: flex;
 }
 
@@ -991,6 +994,10 @@ img {
   margin-right: 70px;
   padding: 0;
   border: none;
+}
+
+.catalog-filter-group-price {
+  margin-left: 82px;
 }
 
 .catalog-filter-title {
@@ -1080,14 +1087,6 @@ img {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
-}
-
-.filter-type-hostel {
-  margin-right: 82px;
-}
-
-.filter-price {
-  margin-right: 71px;
 }
 
 .catalog-filter-item:not(:last-child) {
