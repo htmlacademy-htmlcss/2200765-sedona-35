@@ -89,6 +89,16 @@ img {
   max-height: 64px;
 }
 
+.navigation-logo:hover,
+.navigation-logo:focus {
+  background-color: #82B3D3;
+  outline: none;
+}
+
+.navigation-logo:active {
+  background-color: #68A2CA;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -120,6 +130,18 @@ img {
   height: 2px;
   background-color: #756257;
   content: "";
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  outline: none;
+}
+
+.navigation-link:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-list-right {
@@ -154,6 +176,16 @@ img {
   text-decoration: none;
   text-transform: capitalize;
   position: relative;
+}
+
+.navigation-user:hover,
+.navigation-user:focus {
+  background-color: #82B3D3;
+  outline: none;
+}
+
+.navigation-user:active {
+  background: #68A2CA;
 }
 
 .button-navigation {
